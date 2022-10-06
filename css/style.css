@@ -1,0 +1,129 @@
+body
+{
+    position: relative;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(9, 12, 31), rgb(105, 33, 87) );
+    background-repeat: no-repeat;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+h1
+{
+    position: absolute;
+    height: auto;
+    margin-top: -37rem;
+    margin-left: 2rem;
+    font-size: 2.4rem;
+    color: rgb(220, 155, 211);
+}
+
+
+section
+{
+    position: absolute;
+    padding-top: 4rem;
+    height: 40rem;
+}
+
+.kula
+{
+    background: url("/assets/img/kula.png") center/cover;
+    width: 45em;
+    height: 40rem;
+    opacity: 0.3;
+}
+
+form
+{
+   position: absolute;
+   margin-left: 16rem;
+   top: 11rem;
+   width: 20rem;
+   font-size: 1.3rem;
+   color: rgb(245, 185, 237);
+}
+
+
+input[type="range"] 
+{
+    -webkit-appearance: none;
+    margin-right: 5rem;
+    width: 15rem;
+    height: 7px;
+    cursor: pointer;
+    background: rgba(223, 54, 229, 0.6);
+    border-radius: 6px;
+    background-image: linear-gradient(rgb(245, 185, 237), rgb(104, 32, 94));
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb 
+{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #652359;
+}
+
+#result1, #result2
+{
+   display: block;
+   margin-left: 13rem;
+   margin-top: -1.8rem;
+   
+}
+  
+#result3 
+{
+    display: none;
+}
+
+#result4
+{
+    display: none;
+}
+
+ul
+{
+    position: absolute;
+    bottom: 4rem;
+    left: 12.2rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+    color: rgb(254, 167, 241);
+    text-align:justify;
+    list-style: none;
+    border: 1px solid rgba(241, 90, 238, 0.529);
+    background: rgba(33, 28, 28, 0.75);
+    background: linear-gradient(45deg, rgba(41, 24, 37, 0.5), rgba(50, 50, 95, 0.113));
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+li
+{
+    padding-left: 1.1rem;
+}
+
+footer
+{
+    position: absolute;
+    margin-top: 35rem;
+    margin-left: 45rem;
+    color: rgb(225, 144, 245);
+}
+
+a
+{
+    text-decoration: none;
+    color: #fe5ce1;
+}

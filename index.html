@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="apple.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DynaPuff:wght@400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+          rel="stylesheet">
+    <title>Kalkulator BMI</title>
+</head>
+
+<body>
+    <h1>Kalkulator BMI</h1>
+    
+    <section>
+        <div class="kula"></div>
+        <form oninput="
+                        result1.value = wzrost.value ; 
+                        result2.value = waga.value ;
+                        result3.value = parseInt (wzrost.value) / 100 ;
+                        result4.value = (waga.value) / Math.pow (result3.value,2) ;
+                        result5.value = Math.round(result4.value * 100)/100;">
+            <input type="range" id="height" name="wzrost" min="0" max="220"> Wzrost <br>
+            <output id="result1">0</output> <br>
+            <input type="range" id="weight" name="waga" min="0" max="200"> Waga <br>
+            <output id="result2">0</output> <br>
+
+            Twoje BMI wynosi: &nbsp;
+
+            <output id="result3"></output>
+            <output id="result4"></output>
+            <output id="result5"></output> <br>
+        </form>
+    <ul>
+        <li> 16 = wygłodzenie,</li>
+        <li>16 – 16,99 = wychudzenie,</li>
+        <li>17 – 18,49 = niedowaga,</li>
+        <li>18,5 – 24,99 = wartość prawidłowa,</li>
+        <li>25 – 29,99 = nadwaga,</li>
+        <li>30 – 34,99 = otyłość I stopnia,</li>
+        <li>35 – 39,99 = otyłość II stopnia,</li>
+        <li>> 40 = otyłość III stopnia.</li>
+    </ul>
+    </section>
+    <footer>Coded by <a href="https://github.com/Mileenka" target="_blank">Mileenka</a></footer>
+    <script src="/js/scripts.js">
+    </script>
+</body>
+
+</html>

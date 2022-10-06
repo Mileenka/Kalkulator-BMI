@@ -32,7 +32,7 @@ section
 
 .kula
 {
-    background: url("./assets/img/kula.png") center/cover;
+    background: url("../assets/img/kula.png") center/cover;
     width: 45em;
     height: 40rem;
     opacity: 0.3;

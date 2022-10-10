@@ -16,38 +16,37 @@
 
 <body>
     <h1>Kalkulator BMI</h1>
-    
+
     <section>
         <div class="kula"></div>
         <form oninput="
                         result1.value = wzrost.value ; 
                         result2.value = waga.value ;
                         result3.value = parseInt (wzrost.value) / 100 ;
-                        result4.value = (waga.value) / Math.pow (result3.value,2) ;
-                        result5.value = Math.round(result4.value * 100)/100;">
+                        result3.value = (waga.value) / Math.pow (result3.value,2) ;
+                        result3.value = Math.round(result3.value * 100)/100;">
             <input type="range" id="height" name="wzrost" min="0" max="220"> Wzrost (cm) <br>
             <output id="result1">0</output> <br>
-            <input type="range" id="weight" name="waga" min="0" max="200"> Waga (kg)  <br>
+            <input type="range" id="weight" name="waga" min="0" max="200"> Waga (kg) <br>
             <output id="result2">0</output> <br>
 
-            Twoje BMI wynosi: &nbsp;
+            Twoje BMI wynosi:
 
             <output id="result3"></output>
-            <output id="result4"></output>
-            <output id="result5"></output> <br>
+            
         </form>
-    <ul>
-        <li> 16 = wygłodzenie,</li>
-        <li>16 – 16,99 = wychudzenie,</li>
-        <li>17 – 18,49 = niedowaga,</li>
-        <li>18,5 – 24,99 = wartość prawidłowa,</li>
-        <li>25 – 29,99 = nadwaga,</li>
-        <li>30 – 34,99 = otyłość I stopnia,</li>
-        <li>35 – 39,99 = otyłość II stopnia,</li>
-        <li>> 40 = otyłość III stopnia.</li>
-    </ul>
+        <ul>
+            <li> 16 = wygłodzenie,</li>
+            <li>16 – 16,99 = wychudzenie,</li>
+            <li>17 – 18,49 = niedowaga,</li>
+            <li>18,5 – 24,99 = wartość prawidłowa,</li>
+            <li>25 – 29,99 = nadwaga,</li>
+            <li>30 – 34,99 = otyłość I stopnia,</li>
+            <li>35 – 39,99 = otyłość II stopnia,</li>
+            <li>> 40 = otyłość III stopnia.</li>
+        </ul>
     </section>
-    <footer>Coded by <a href="https://github.com/Mileenka" target="_blank">Mileenka</a></footer>
+    <footer><p>Coded by <a href="https://github.com/Mileenka" target="_blank" rel="noopener noreferrer">Mileenka</a></p></footer>
     <script src="./js/scripts.js">
     </script>
 </body>
